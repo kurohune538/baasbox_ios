@@ -9,12 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var client: BAAClient = BAAClient.sharedClient()
+    @IBOutlet weak var userNameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        passwordField.secureTextEntry = true
+        
     }
-
+    
+    @IBAction func login (sender: AnyObject) {
+        client.authenticateUser(userNameField.text!, password: passwordField.text!, completion: {(success, error) -> Void in
+            if success {
+                print("success")
+                
+            } else {
+                print("error")
+            }
+        })
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
