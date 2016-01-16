@@ -21,14 +21,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func login (sender: AnyObject) {
-        client.authenticateUser(userNameField.text!, password: passwordField.text!, completion: {(success, error) -> Void in
-            if success {
-                print("success")
-                
-            } else {
-                print("error")
-            }
-        })
+
+        client.postPath("login", parameters: ["username":userNameField.text!, "password":passwordField.text!, "appcode":"1234567890"], success: {(responseObject) -> Void in
+            let token: String = responseObject["data"]!!["X-BB-SESSION"] as! String
+            print(token)
+            }, failure: {(error) -> Void in
+                print(error)
+            })
+    
     }
     
     
