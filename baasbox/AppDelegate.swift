@@ -8,12 +8,14 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var token:String = ""
+    var viewController: ViewController!
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         BaasBox.setBaseURL("http://localhost:9000", appCode: "1234567890")
         return true

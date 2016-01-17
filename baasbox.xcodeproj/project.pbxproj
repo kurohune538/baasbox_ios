@@ -16,6 +16,8 @@
 		36BE177A1C4A214100107B03 /* baasboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE17791C4A214100107B03 /* baasboxTests.swift */; };
 		36BE17851C4A214100107B03 /* baasboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE17841C4A214100107B03 /* baasboxUITests.swift */; };
 		36BE17941C4A369A00107B03 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE17931C4A369A00107B03 /* SignUpViewController.swift */; };
+		36BE17961C4B4EFD00107B03 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE17951C4B4EFD00107B03 /* PostViewController.swift */; };
+		36BE17981C4B50B600107B03 /* SMPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE17971C4B50B600107B03 /* SMPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		36BE17861C4A214100107B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36BE17921C4A21B900107B03 /* baasbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "baasbox-Bridging-Header.h"; sourceTree = "<group>"; };
 		36BE17931C4A369A00107B03 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		36BE17951C4B4EFD00107B03 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		36BE17971C4B50B600107B03 /* SMPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMPost.swift; sourceTree = "<group>"; };
 		A0ED72A880A231CFA4DEC520 /* libPods-baasbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-baasbox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85F72B996599A70AC9A6244 /* Pods-baasbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-baasbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-baasbox/Pods-baasbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,12 +113,14 @@
 			children = (
 				36BE17641C4A214100107B03 /* AppDelegate.swift */,
 				36BE17661C4A214100107B03 /* ViewController.swift */,
+				36BE17951C4B4EFD00107B03 /* PostViewController.swift */,
 				36BE17931C4A369A00107B03 /* SignUpViewController.swift */,
 				36BE17681C4A214100107B03 /* Main.storyboard */,
 				36BE176B1C4A214100107B03 /* Assets.xcassets */,
 				36BE176D1C4A214100107B03 /* LaunchScreen.storyboard */,
 				36BE17701C4A214100107B03 /* Info.plist */,
 				36BE17921C4A21B900107B03 /* baasbox-Bridging-Header.h */,
+				36BE17971C4B50B600107B03 /* SMPost.swift */,
 			);
 			path = baasbox;
 			sourceTree = "<group>";
@@ -336,9 +342,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BE17961C4B4EFD00107B03 /* PostViewController.swift in Sources */,
 				36BE17941C4A369A00107B03 /* SignUpViewController.swift in Sources */,
 				36BE17671C4A214100107B03 /* ViewController.swift in Sources */,
 				36BE17651C4A214100107B03 /* AppDelegate.swift in Sources */,
+				36BE17981C4B50B600107B03 /* SMPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

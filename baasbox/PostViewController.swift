@@ -1,38 +1,28 @@
 //
-//  SignUpViewController.swift
+//  PostViewController.swift
 //  baasbox
 //
-//  Created by shinnosuke on 2016/01/16.
+//  Created by shinnosuke on 2016/01/17.
 //  Copyright © 2016年 shinnosuke. All rights reserved.
 //
 
 import UIKit
 
-class SignUpViewController: UIViewController {
-
+class PostViewController: UIViewController {
     var client: BAAClient = BAAClient.sharedClient()
-    @IBOutlet weak var userNamefield: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        passwordField.secureTextEntry = true
+        
+        client.loadCollection(<#T##object: BAAObject!##BAAObject!#>, withParams: <#T##[NSObject : AnyObject]!#>, completion: <#T##BAAArrayResultBlock!##BAAArrayResultBlock!##([AnyObject]!, NSError!) -> Void#>)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func signUp (sender: AnyObject) {
-        client.createUserWithUsername(userNamefield.text, password: passwordField.text, completion: {(success, error) -> Void in
-            if success {
-                
-            } else {
-                print("error")
-            }
-        })
-    }
-    
+
     /*
     // MARK: - Navigation
 
